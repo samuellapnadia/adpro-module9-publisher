@@ -10,3 +10,17 @@ Using the same URL in both publisher and subscriber means they are connecting to
 
 ## Sending and processing event.
 ![](img/ss_terminal.png)
+
+## Monitoring chart based on publisher.
+![](img/ss_rabbitMQ_2.png)
+When I ran the publisher using cargo run, it sent five UserCreatedEventMessages to the RabbitMQ message broker, which caused a brief spike in the "Message rates" graph shown on the RabbitMQ dashboard. This spike indicates that messages were successfully published and entered the queue. Since the subscriber was running at the same time, it immediately consumed those messages, resulting in the queue returning to zero. This interaction between the publisher and subscriber confirms that the message flow is working correctly and that RabbitMQ is handling the communication between them as expected.
+
+
+
+
+
+
+
+
+
+
