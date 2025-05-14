@@ -4,3 +4,6 @@ The program sends a total of five messages, each one being a serialized UserCrea
 
 ## The url of: "amqp://guest:guest@localhost:5672" is the same as in the subscriber program, what does it mean?
 Using the same URL in both publisher and subscriber means they are connecting to the same local RabbitMQ message broker via the AMQP protocol on port 5672. The connection uses the default guest username and password. This setup ensures both components are communicating through the same message broker, so that messages sent by the publisher can be properly received by the subscriber.
+
+## Running RabbitMQ as message broker
+![](img/ss_RabbitMQ.png)
