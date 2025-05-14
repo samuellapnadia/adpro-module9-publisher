@@ -7,3 +7,6 @@ Using the same URL in both publisher and subscriber means they are connecting to
 
 ## Running RabbitMQ as message broker
 ![](img/ss_RabbitMQ.png)
+
+## Sending and processing event.
+![](img/ss_terminal.png)
